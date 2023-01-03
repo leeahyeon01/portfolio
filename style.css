@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+#root {
+  width: 100vw;
+  height: 150vh;
+  background-image: url("./image/cloud.jpg");
+  background-size: cover;
+}
+#root > header {
+  width: 100vw;
+  height: 50px;
+  border: solid 3px black;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+#root > header .underbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+  justify-content: flex-start;
+  align-items: center;
+}
+#root > header .MuiTabs {
+  width: 110px;
+  background-color: #039be5;
+  height: 2px;
+  position: absolute;
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+#root .profile {
+  width: 300px;
+  height: 300px;
+  border: solid 3px black;
+}
+#root #intro {
+  margin-top: 30px;
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+#root #intro .left_div {
+  display: flex;
+}
+#root #intro .mac {
+  width: 600px;
+  height: 500px;
+  background-image: url("./image/items/macos.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 40%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+#root #intro .typing {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  -webkit-animation: typing 5s steps(26) infinite;
+          animation: typing 5s steps(26) infinite;
+}
+#root #intro .typing ::before {
+  overflow: hidden;
+  top: 100%;
+  left: 100%;
+  position: absolute;
+  -webkit-animation: typing 5s steps(31) infinite;
+          animation: typing 5s steps(31) infinite;
+}
+@-webkit-keyframes typing {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+#root .page-wrap {
+  background-image: url("./image/paper2.jpg");
+  padding: 2em;
+  background-color: #fff;
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+}
+#root .page-wrap .pinkTape {
+  position: absolute;
+  bottom: 5px;
+  right: -25px;
+  transform: rotate(-40deg);
+}
+#root .page-wrap .greenTape {
+  position: absolute;
+  bottom: 300px;
+  right: 500px;
+  transform: rotate(-40deg);
+}
+#root .skill-bar-container {
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  margin-bottom: 0.5em;
+}
+#root .skill-bar-container .skill-bar {
+  display: block;
+  border-radius: 4px;
+  height: 25px;
+}
+#root .skill-bar-container .skill-bar.level1 {
+  width: 100%;
+  background-color: #9ad3f3;
+  -webkit-animation: level1 2s ease-out;
+          animation: level1 2s ease-out;
+}
+#root .skill-bar-container .skill-bar.level2 {
+  width: 80%;
+  background-color: #a9d9f5;
+  -webkit-animation: level2 2s ease-out;
+          animation: level2 2s ease-out;
+}
+#root .skill-bar-container .skill-bar.level3 {
+  width: 100%;
+  background-color: #b9e0f7;
+  -webkit-animation: level3 2s ease-out;
+          animation: level3 2s ease-out;
+}
+#root .skill-bar-container .skill-bar.level4 {
+  width: 80%;
+  background-color: #c8e7f8;
+  -webkit-animation: level4 2s ease-out;
+          animation: level4 2s ease-out;
+}
+#root .skill-bar-container .skill-bar.level5 {
+  width: 70%;
+  background-color: #d7edfa;
+  -webkit-animation: level5 2s ease-out;
+          animation: level5 2s ease-out;
+}
+#root .skill-bar-container .skill-bar.level6 {
+  width: 70%;
+  background-color: #d7edfa;
+  -webkit-animation: level6 2s ease-out;
+          animation: level6 2s ease-out;
+}
+#root .skill-bar-container .skill-name {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  color: #333;
+}
+#root .skill-bar-container .skill-percent {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #999;
+}
+@-webkit-keyframes level1 {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes level1 {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes level2 {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes level2 {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@-webkit-keyframes level3 {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes level3 {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@-webkit-keyframes level4 {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes level4 {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@-webkit-keyframes level5 {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes level5 {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@-webkit-keyframes level6 {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes level6 {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70%;
+  }
+}/*# sourceMappingURL=style.css.map */
