@@ -13,7 +13,7 @@
   & > header {
     width: 100vw;
     height: 50px;
-    border: solid 3px black;
+    // border: solid 3px black;
     font-weight: bold;
     display: flex;
     justify-content: space-around;
@@ -47,9 +47,11 @@
 
   //꽃
   #intro {
-    margin-top: 30px;
+    background-image: url("./image/try.png");
+    box-sizing: border-box;
+    background-size: cover;
     width: 100vw;
-    height: 50vh;
+    height: 113vh;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -61,10 +63,23 @@
       display: flex;
     }
 
+    .background {
+      z-index: 8;
+      position: relative;
+      margin-bottom: 100px;
+    }
+
+    .center_div {
+      z-index: 10;
+      right: 1000px;
+      position: absolute;
+      right: auto;
+    }
+
     .mac {
-      width: 600px;
-      height: 500px;
-      background-image: url("./image/items/macos.png");
+      width: 900px;
+      height: 700px;
+      background-image: url("./image/paper2.jpg");
       background-size: 100%;
       background-repeat: no-repeat;
       background-position-y: 40%;
@@ -112,6 +127,9 @@
   // skill bar
 
   .page-wrap {
+    position: absolute;
+    z-index: 10;
+
     background-image: url("./image/paper2.jpg");
     padding: 2em;
     background-color: #fff;

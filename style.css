@@ -14,7 +14,6 @@
 #root > header {
   width: 100vw;
   height: 50px;
-  border: solid 3px black;
   font-weight: bold;
   display: flex;
   justify-content: space-around;
@@ -42,9 +41,11 @@
   border: solid 3px black;
 }
 #root #intro {
-  margin-top: 30px;
+  background-image: url("./image/try.png");
+  box-sizing: border-box;
+  background-size: cover;
   width: 100vw;
-  height: 50vh;
+  height: 113vh;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -55,10 +56,21 @@
 #root #intro .left_div {
   display: flex;
 }
+#root #intro .background {
+  z-index: 8;
+  position: relative;
+  margin-bottom: 100px;
+}
+#root #intro .center_div {
+  z-index: 10;
+  right: 1000px;
+  position: absolute;
+  right: auto;
+}
 #root #intro .mac {
-  width: 600px;
-  height: 500px;
-  background-image: url("./image/items/macos.png");
+  width: 900px;
+  height: 700px;
+  background-image: url("./image/paper2.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: 40%;
@@ -112,6 +124,8 @@
   }
 }
 #root .page-wrap {
+  position: absolute;
+  z-index: 10;
   background-image: url("./image/paper2.jpg");
   padding: 2em;
   background-color: #fff;
